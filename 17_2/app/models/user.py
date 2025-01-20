@@ -1,7 +1,7 @@
-from fastapi_module.module_17.app.backend.db import Base
+from app.backend.db import Base
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.orm import relationship
-from fastapi_module.module_17.app.models import *
+from app.models import *
 
 class User(Base):
     __tablename__ = 'users'
